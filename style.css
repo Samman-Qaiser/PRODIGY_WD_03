@@ -1,0 +1,132 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Product Sans';
+    font-size: 62.5%;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #14213d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.main h1{
+    font-size: 5vw;
+    color: #fca311;
+}
+.con{
+   width: 20%; 
+   height: 40%;
+
+   display: grid;
+   column-gap: 0.2rem;
+   grid-template-columns: repeat(3,1fr);
+   box-sizing: border-box;
+   padding: 1rem;
+}
+
+.New ,.reset{
+    padding: 0.6rem 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid #fca311;
+    color: #14213d;
+    position: relative;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 1rem;
+    overflow: hidden;
+    width: 15%;
+    z-index: 4;
+
+}
+.New{
+    width: 15%;
+  
+}
+
+.reset::after{
+    content: '';
+    position: absolute;
+    background-color: #fca311;
+    left: 0;
+    width: 0%;
+    top: 0;
+    transition: all ease 0.4s;
+    height: 100%;
+    z-index: -1;
+}
+.reset:hover::after{
+    width: 100%;
+  
+
+
+}
+.reset:hover{
+    color: white;
+}
+.New::after{
+    content: '';
+    position: absolute;
+    background-color: #fca311;
+    left: 0;
+    width: 0%;
+    top: 0;
+    transition: all ease 0.4s;
+    height: 100%;
+    z-index: -1;
+}
+.New:hover::after{
+    width: 100%;
+  
+
+
+}
+.New:hover{
+    color: white;
+}
+.win-con{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    background-color: #e5e5e5;
+    border-radius: 0.6rem;
+    position: absolute;
+    width: 70%;
+    height: 40%;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    justify-content: space-between;
+ display: none;
+    
+}
+.win-con h1{
+    font-size:4vw;
+}
+.ri-close-circle-fill{
+    color:#14213d;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+.boxes{
+    background-color: #e5e5e5;
+ border-radius: 0.5rem;
+    width: 90%;
+    height: 90%;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #fca311;
+    cursor: pointer;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+}
